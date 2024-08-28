@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Restablecer el diseño vertical y alineado a la izquierda para todas las secciones excepto "about" */
+section:not(.about) {
+    display: block;
+    text-align: left;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea, form button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Estilos específicos para la sección "Sobre Mí" */
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 100px; /* Espacio entre la descripción y la imagen */
+}
+
+.about-content p {
+    margin-right: 40px; /* Espacio entre descripción e imagen */
+    flex: 1;
+}
+
+.about-content img {
+    max-width: 150px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 767px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about p {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+}
+
